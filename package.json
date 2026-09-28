@@ -1,0 +1,22 @@
+{
+  "name": "@chartinger/pi-codex-usage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Pi extension displaying OpenAI Codex five-hour and weekly usage limits",
+  "keywords": ["pi-package", "pi-extension", "codex", "usage"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chartinger/pi-codex-usage.git"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "scripts": {
+    "test": "node --test usage.test.mjs"
+  }
+}
